@@ -24,7 +24,7 @@ update: function(){
     }
 },
 render: function(){
-    ctx.drawImage(this.sprite, this.x, this.y, 100, 100);
+    ctx.drawImage(this.sprite, this.x-50, this.y-50, 100, 100);
     }
     
 };

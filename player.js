@@ -24,6 +24,6 @@ var player = {
     },
     
     render: function(){
-        ctx.drawImage(this.sprites[this.spriteNum], this.x, this.y);
+        ctx.drawImage(this.sprites[this.spriteNum], this.x-40, this.y-40, 80, 80);
     }
 };
