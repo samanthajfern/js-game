@@ -1,6 +1,6 @@
 var enemy = {
-    x: 300,
-    y: 300,
+    x: 400,
+    y: 400,
     sprite: (document.getElementById("enemy")),
     
 update: function(){
