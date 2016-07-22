@@ -13,7 +13,7 @@ $(document).keyup(function(e){
     if (e.keyCode == 40) player.velY = 0;
 });
 
-$(document).on('touchstart', function(e){
+$(document).on('touchmove', function(e){
               
     var touchX= e.touches[0].clientX;
     var touchY= e.touches[0].clientY;
@@ -22,3 +22,10 @@ $(document).on('touchstart', function(e){
     if (touchY < player.y) player.velY = -5;
     if (touchY > player.y) player.velY = 5;
 });
+
+$(document).on('touchend', function(e){
+    player.velX = 0;
+    player.velY = 0;
+    
+});
+
