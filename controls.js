@@ -18,7 +18,7 @@ $(document).on('touchmove', function(e){
     e.preventDefault();          
     var touchX= e.touches[0].clientX;
     var touchY= e.touches[0].clientY;
-    if (touchx < player.x){
+    if (touchX < player.x){
         player.velX = -5;
         player.dir = "left";
     }
@@ -33,6 +33,5 @@ $(document).on('touchmove', function(e){
 $(document).on('touchend', function(e){
     player.velX = 0;
     player.velY = 0;
-    
 });
 
